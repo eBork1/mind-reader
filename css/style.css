@@ -1,0 +1,36 @@
+body {
+    font-family: helvetica;
+    background-color: rgb(88, 86, 86);
+}
+
+.mainWindow {
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    float: center;
+    width: 60%;
+    padding: 20px;
+    border-radius: 18px;
+    margin: auto;
+    background-color: white;
+}
+
+.mainWindow h1 {
+    text-align: center;
+}
+
+
+.next {
+    float: right;
+}
+
+.back {
+    float: left;
+}
+
+.desc {
+    font-size: 25pt;
+    text-align: center
+}
+
+.ex {
+    text-align: center
+}
