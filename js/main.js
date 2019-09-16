@@ -54,7 +54,7 @@ function renderState() {
             bigText.innerHTML = " ";
             for (var i = 0 ;i < 100; i++) {
                 if (i % 9 == 0) {
-                    bigText.innerHTML += i + " =& " + "<br>";
+                    bigText.innerHTML += i + " = & " + "<br>";
                 }
                 else  {
                     var char = String.fromCharCode(Math.floor(Math.random() * 10) + 36);
@@ -69,7 +69,5 @@ function renderState() {
             smallText.innerHTML = "Your symbol is: &"
             nextBtn.style.visibility = "hidden";
         break;
-
-        
     }
 }
