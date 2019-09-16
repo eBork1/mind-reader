@@ -1,5 +1,6 @@
 var currentState = 0;
 var states = ['0', '1', '2', '3', '4', '5'];
+var sym = ["!", "@", "#", "$", "%", "&", "&"];
 
 var bigText = document.querySelector('.desc');
 var smallText = document.querySelector('.ex');
@@ -50,35 +51,25 @@ function renderState() {
             break;
         
         case '4':
-
+            bigText.innerHTML = " ";
+            for (var i = 0 ;i < 100; i++) {
+                if (i % 9 == 0) {
+                    bigText.innerHTML += i + " =& " + "<br>";
+                }
+                else  {
+                    var char = String.fromCharCode(Math.floor(Math.random() * 10) + 36);
+                    bigText.innerHTML += i + " = " + char + "<br>";
+            }
+        }
+            nextBtn.style.visibility = "visible";
+            smallText.innerHTML = "Find your new number";
             break;
-        
         case '5':
+            bigText.innerHTML = "&";
+            smallText.innerHTML = "Your symbol is: &"
+            nextBtn.style.visibility = "hidden";
+        break;
 
-            break; 
         
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
