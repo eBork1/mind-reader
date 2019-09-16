@@ -65,9 +65,11 @@ function renderState() {
             smallText.innerHTML = "Find your new number";
             break;
         case '5':
-            bigText.innerHTML = "&";
-            smallText.innerHTML = "Your symbol is: &"
+            var rand = sym[Math.floor(Math.random() * sym.length)];
+            bigText.innerHTML = rand;
+            smallText.innerHTML = "Your symbol is: ..." ;
             nextBtn.style.visibility = "hidden";
         break;
+
     }
 }
